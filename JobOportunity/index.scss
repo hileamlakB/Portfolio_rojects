@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
+//resest
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    p,
+    ul,
+    li {
+        font-family: 'Piazzolla', serif;
+    }
+
+    .header {
+        height: 70vh;
+        width: 100%;
+        // background-image: url("../asset/img/confetti.gif");
+        background-size: contain;
+        background-color: #61a2a2;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+        margin-bottom: 25px;
+
+
+
+        .container {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .left,
+        .right {
+            width: 50%;
+            height: 100%;
+        }
+
+        .right {
+
+
+            .top {
+
+                height: 27%;
+            }
+
+            .bottom {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 70%;
+
+                img {
+                    height: 100%;
+
+                }
+            }
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                width: 400px;
+                text-align: left;
+                margin: 20px;
+                color: white;
+                font-size: 17px;
+            }
+        }
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+        }
+
+
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+
+        @media (min-width: 500px) {
+            width: 90%;
+        }
+
+        .title {
+            color: #61a2a2;
+            margin-bottom: 30px;
+        }
+
+
+
+        .card_container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+
+            .benefit_cards {
+
+                min-width: 300px;
+                max-width: 400px;
+                margin: 10px;
+                color: #282929;
+                width: 30%;
+                min-height: 350px;
+                border-radius: 5px;
+                // border-left: 1.2px solid #1c9c9c;
+                box-shadow: 3px 5px 0px 0.5px rgba(22, 22, 22, 0.16);
+
+                h2 {
+                    text-align: center;
+                    text-transform: capitalize;
+                    padding: 10px;
+                    width: 100%;
+                    background-color: #61a2a2;
+                    color: white;
+                    margin-bottom: 2px;
+                    border-radius: 5px 5px 0 0;
+
+                }
+
+                .benefit_description {
+                    margin: 5px;
+                    margin-top: 15px;
+                    font-size: 15px;
+                    font-family: 'Piazzolla', serif;
+
+                    ul>li {
+                        margin-left: 25px;
+                    }
+                }
+
+            }
+        }
+
+        .requirements,
+        .responsibilities {
+            align-self: flex-start;
+            margin-left: 30px;
+            margin-top: 30px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-family: 'Peddana', serif;
+        }
+    }
+
+    .take-test {
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+        background-color: #61a2a2;
+        border-radius: 4px;
+        border: none;
+        margin: 10px;
+
+        &:hover {
+            transform: scale(.9);
+        }
+    }
+
+    footer {
+        min-height: 30vh;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #61a2a2;
+    }
+}
